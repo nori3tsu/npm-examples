@@ -1,3 +1,3 @@
-# Library Laboratory
+# NPM Examples
 
-This repository contains the examples of trying various libraries.
+This repository contains the examples of trying various npm libraries.
