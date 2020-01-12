@@ -1,0 +1,22 @@
+{
+  "name": "npm-examples",
+  "version": "1.0.0",
+  "description": "This repository contains the examples of trying various libraries.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^24.0.25",
+    "aws-sdk": "^2.601.0",
+    "jest": "^24.9.0",
+    "jest-date-mock": "^1.0.8",
+    "ts-jest": "^24.3.0",
+    "ts-node": "^8.6.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.7.4"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [{
+    "type": "node",
+    "request": "launch",
+    "name": "Debug Jest Test",
+    "cwd": "${workspaceFolder}",
+    "args": [
+      "--inspect-brk",
+      "--require",
+      "tsconfig-paths/register",
+      "${workspaceRoot}/node_modules/.bin/jest",
+      "--runInBand",
+      "--watch",
+      "--config",
+      "${workspaceRoot}/jest.config.js",
+      "${file}"
+    ],
+    "restart": true,
+    "console": "integratedTerminal",
+    "internalConsoleOptions": "neverOpen"
+  }]
+}
