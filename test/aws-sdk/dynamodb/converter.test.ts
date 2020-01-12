@@ -1,0 +1,19 @@
+import { DynamoDB } from "aws-sdk";
+
+describe(DynamoDB, () => {
+  describe("Converter.marshall", () => {
+    test("", () => {
+      const input = { str: "1", num: 1 };
+      const output = { str: { S: "1" }, num: { N: "1" } };
+      expect(DynamoDB.Converter.marshall(input)).toEqual(output);
+    });
+  });
+
+  describe("Converter.unmarshall", () => {
+    test("", () => {
+      const input = { str: { S: "1" }, num: { N: "1" } };
+      const output = { str: "1", num: 1 };
+      expect(DynamoDB.Converter.unmarshall(input)).toEqual(output);
+    });
+  });
+});
